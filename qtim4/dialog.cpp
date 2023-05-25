@@ -220,7 +220,7 @@ void Dialog::updateDisplay()
     if(ui->radioButton->isChecked())
         timeLCD = currentTime.toString("HH:mm:ss a");
     else if(ui->radioButton_2->isChecked())
-        timeLCD = currentTime.toString("hh:mm:ss a");
+        timeLCD = currentTime.toString("hh:mm:ss ap");
 
     lcdClear(Dialog::lcd);
     if(ui->checkBox->isChecked())
